@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+        
+  <beans>
+  <bean name="st" class="com.Spring_Maven.Student"></bean>
+    <bean name="wish" class="com.Spring_Maven.Wish"></bean>
+      <bean name="user" class="com.Spring_Maven.User"></bean>
+            <bean name="emp" class="com.Spring_Maven.Employee">
+            <property name="empId" value="12345"></property>
+            <property name="empName" value="Wasif"></property>
+            </bean>
+            
+            <bean name="emp1" class="com.Spring_Maven.Employee">
+            <property name="empId" value="9876"></property>
+            <property name="empName" value="Harshit"></property>
+            <property name="add" ref="add1"></property>
+            </bean>
+            
+            <bean name="add1" class="com.Spring_Maven.Address">
+            <property name="city" value="kolkata"></property>
+            <property name="state" value="West Bengal"></property>
+           </bean>
+      
+    
+  
+  
+  </beans>
